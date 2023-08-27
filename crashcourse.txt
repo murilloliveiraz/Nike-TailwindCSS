@@ -1,0 +1,100 @@
+<main class="p-5">
+  <h1 class="text-center text-lg text-blue-400">Hello World!</h1>
+  <div class="w-full h-10 bg-violet-200 border-violet-600 rounded-md my-4 p-2">
+    <p class="text-center font-mono font-extrabold">A div</p>
+  </div>
+
+  <div class="fixed w-10 h-10 bg-red-500 top-0"></div>
+  <div class="flex justify-between">
+    <div class="h-16 w-16 rounded-full bg-blue-500"></div>
+    <div class="h-16 w-16 rounded-full bg-blue-500"></div>
+    <div class="h-16 w-16 rounded-full bg-blue-500"></div>
+  </div>
+  <div class="grid grid-cols-3 gap-2 mt-3">
+    <div class="bg-violet-500 h-12"></div>
+    <div class="bg-violet-500 h-12"></div>
+    <div class="bg-violet-500 h-12"></div>
+  </div>
+  <div class="md:block hidden">
+    <p>I will appear for device resolution > 768px </p>
+  </div>
+    <div class="max md:block hidden">
+    <p>I will appear for device resolution < 768px </p>
+  </div>
+
+  <button class="my-2 rounded-lg bg-blue-500 px-4 py-2 text-white hover:bg-blue-700 focus:outline-none focus:ring focus:ring-blue-300 active:bg-blue-800">
+    Click Me
+  </button>
+
+  <ul class="my-2 space-y-3">
+    <li class="bg-withe p-2 first:bg-yellow-100">Item 1</li>
+    <li class="bg-withe p-2 first:bg-yellow-100 odd:bg-blue-200 even:bg-green-200">Item 1</li>
+    <li class="bg-withe p-2 first:bg-yellow-100 odd:bg-blue-200 even:bg-green-200">Item 1</li>
+    <li class="bg-withe p-2 first:bg-yellow-100 odd:bg-blue-200 even:bg-green-200">Item 1</li>
+    <li class="bg-withe p-2 first:bg-yellow-100 odd:bg-blue-200 even:bg-green-200">Item 1</li>
+  </ul>
+
+  <div class="card">
+    <h3 class="text-base font-medium tracking-tight text-slate-900 dark:text-white">This is a text Element</h3>
+    <p class="mt-2 text-sm text-slate-500 dark:text-blue-100">This is a even longer p tag Element</p>
+
+    <button
+    id="toggleDark"
+    class="text-blue-900 px-4 py-2 text-sm font-medium mt-8 bg-blue-100 rounded-md"
+    onclick="document.body.classList.toggle('dark')"
+    >
+      Toggle Dark Mode
+    </button>
+  </div>
+
+  <button class="special-button">
+    Click Me
+  </button>
+
+  <p class="text-[12px] text-chestnut bg-stone-100 p-[16px]">Chestnut Donut</p>
+</main>
+
+<script type="text/javascript">
+  document.addEventListener("DOMContentLoaded", () => {
+    const toggleDark = document.getElementById('toggleDark')
+    toggleDark.addEventListener('click', function() {
+      if(document.documentElement.classList.includes('dark')) {
+        document.documentElement.classList.remove('dark')
+      }
+      else {
+        document.documentElement.classList.add('dark')
+      }
+      alert("click!")
+    });
+  });
+</script>
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+  .card {
+    @apply m-10 rounded-lg bg-white px-6 py-8  shadow-xl ring-slate-900/5 dark:bg-black
+  }
+
+  .special-button {
+    @apply bg-gradient-to-r from-purple-500 to-blue-500 my-3 hover:from-purple-600
+      hover:to-blue-600 focus:outline-none focus:ring focus:ring-purple-300
+      active:bg-blue-700 px-6 py-3 rounded-lg text-white font-semibold
+      shadow-md transition duration-300 ease-in-out transform hover:scale-105
+  }
+}
+
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  darkMode: "class",
+  theme: {
+    extend: {
+      colors: {
+        chestnut: '#973F29',
+      }
+    },
+  },
+  plugins: [],
+}
