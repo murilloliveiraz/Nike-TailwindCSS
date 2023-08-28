@@ -1,14 +1,14 @@
 import { useState } from 'react'
 
 import { arrowRight } from '../assets/icons'
-import { bigShoe1 } from '../assets/images'
+import { nike1 } from '../assets/images'
 import Button from '../components/Button'
 import ShoeCard from '../components/ShoeCard'
 
 import { shoes, statistics } from '../constants'
 
 const Hero = () => {
-  const [bigShoeImg, setBigShoeImg] = useState(bigShoe1)
+  const [bigShoeImg, setBigShoeImg] = useState(nike1)
 
   return (
     <section 
@@ -44,8 +44,8 @@ const Hero = () => {
         />
 
             <div className='flex sm:gap-6 gap-4 absolute -bottom-[5%] sm:left-[10%] max-sm:px-6'>
-              {shoes.map((shoe) => (
-                <div key={shoe}>
+              {shoes.map((shoe, index) => (
+                <div key={index}>
                   <ShoeCard 
                     imgURL={shoe}
                     changeBigShoeImage={(shoe) => setBigShoeImg(shoe)}

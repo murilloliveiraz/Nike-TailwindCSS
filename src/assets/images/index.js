@@ -1,6 +1,6 @@
-import bigShoe1 from './big-shoe1.png'
-import bigShoe2 from './big-shoe2.png'
-import bigShoe3 from './big-shoe3.png'
+import nike1 from './nike1.png'
+import nike2 from './nike2.png'
+import nike3 from './nike3.png'
 
 import customer1 from './customer1.jpeg'
 import customer2 from './customer2.svg'
@@ -22,9 +22,9 @@ import thumbnailShoe2 from './thumbnail-shoe2.svg'
 import thumbnailShoe3 from './thumbnail-shoe3.svg'
 
 export {
-    bigShoe1,
-    bigShoe2,
-    bigShoe3,
+    nike1,
+    nike2,
+    nike3,
 
     customer1,
     customer2,
