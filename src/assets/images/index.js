@@ -1,6 +1,10 @@
 import nike1 from './nike1.png'
 import nike2 from './nike2.png'
 import nike3 from './nike3.png'
+import nike4 from './nike4.png'
+import nike5 from './nike5.png'
+import nike6 from './nike6.png'
+import nike7 from './nike7.png'
 import jordan from './jordan.png'
 
 import customer1 from './customer1.jpeg'
@@ -27,6 +31,10 @@ export {
     nike1,
     nike2,
     nike3,
+    nike4,
+    nike5,
+    nike6,
+    nike7,
     jordan,
 
     customer1,

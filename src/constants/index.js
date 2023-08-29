@@ -1,5 +1,5 @@
 import { facebook, instagram, shieldTick, support, truckFast, twitter } from "../assets/icons";
-import {customer1, customer2, shoe4, shoe5, shoe6, shoe7, nike1, nike2, nike3} from "../assets/images";
+import {customer1, customer2, nike4, nike5, nike6, nike7, nike1, nike2, nike3} from "../assets/images";
 
 export const navLinks = [
     { href: "#home", label: "Home" },
@@ -31,22 +31,22 @@ export const statistics = [
 
 export const products = [
     {
-        imgURL: shoe4,
+        imgURL: nike4,
         name: "Nike Air Jordan-01",
         price: "$200.20",
     },
     {
-        imgURL: shoe5,
+        imgURL: nike5,
         name: "Nike Air Jordan-10",
         price: "$210.20",
     },
     {
-        imgURL: shoe6,
+        imgURL: nike6,
         name: "Nike Air Jordan-100",
         price: "$220.20",
     },
     {
-        imgURL: shoe7,
+        imgURL: nike7,
         name: "Nike Air Jordan-001",
         price: "$230.20",
     },
